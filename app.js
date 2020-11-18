@@ -166,6 +166,16 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(leftTimerId)
     }
 
+    $("#thediv").click(function(e) {
+        var divWidth = $("#thediv").width();		
+      var clickX = e.clientX;
+      if (clickX > divWidth/2) {
+          console.log("Div was clicked on the right");
+      } else {
+          console.log("Div was clicked on the left");
+      }
+    });
+
     function start() {
         if(!isGameOver) {
             createPlatforms()

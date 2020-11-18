@@ -21,3 +21,10 @@
     position: absolute;
 }
 
+.thediv {
+    height: 500px; 
+    width:  100%;
+    background-color: #CCCCCC;
+    z-index: 10;
+}
+
